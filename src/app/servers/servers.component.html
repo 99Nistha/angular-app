@@ -12,7 +12,7 @@
 <!-- <p>{{serverName}}</p> -->
 <button 
     class="btn btn-primary"
-    [disabled]="!allowNewServer"
+    [disabled]="serverName===''"
     (click)="onCreateServe()">Add Server</button>
 <!-- <p [innerText]="allowNewServer"></p> -->
 <p>{{serverCreationStatus}}</p>
