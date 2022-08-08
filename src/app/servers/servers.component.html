@@ -1,7 +1,9 @@
 <p>servers works! just by running mg g c servers cmd</p>
 <button 
     class="btn btn-primary"
-    [disabled]="!allowNewServer">Add Server</button>
-<p [innerText]="allowNewServer"></p>
+    [disabled]="!allowNewServer"
+    (click)="onCreateServe()">Add Server</button>
+<!-- <p [innerText]="allowNewServer"></p> -->
+<p>{{serverCreationStatus}}</p>
 <app-server></app-server>
 <app-server></app-server>
